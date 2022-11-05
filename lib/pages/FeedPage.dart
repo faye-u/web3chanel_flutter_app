@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:web3chanel_flutter_app/widgets/AvatarWidget.dart';
+import 'package:web3chanel_flutter_app/navigation/FeedTabController.dart';
 
+import '../widgets/AvatarWidget.dart';
 import '../widgets/SearchBar.dart';
 
 class FeedPage extends StatefulWidget {
@@ -20,7 +21,8 @@ class _FeedPageState extends State<FeedPage> {
       child: Column(
         children: const <Widget>[
           SerchBar(),
-          AvatarWidget()
+          AvatarWidget(),
+          Expanded( child: FeedTabController())
         ]
       )
     );
