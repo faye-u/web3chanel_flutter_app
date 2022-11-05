@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web3chanel_flutter_app/pages/ChatPage.dart';
-
+import 'package:web3chanel_flutter_app/pages/FeedPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,10 +29,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Feed',
-      style: optionStyle,
-    ),
+    FeedPage(),
     ChatPage(),
     Text(
       'Proifle',
