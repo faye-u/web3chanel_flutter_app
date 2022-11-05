@@ -16,7 +16,7 @@ class _AvatarWidgetState extends State<AvatarWidget> {
     return 
       Avatar(
         placeholderColors: [Colors.pink],
-        shape: AvatarShape.circle(36),
+        shape: AvatarShape.circle(16),
         name:
             'Undefyned', // Fallback if no image source is available
         );

@@ -12,7 +12,6 @@ class FeedPage extends StatefulWidget {
 }
 
 class _FeedPageState extends State<FeedPage> {
-  TextEditingController textController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +19,8 @@ class _FeedPageState extends State<FeedPage> {
       color: Colors.black,
       child: Column(
         children: const <Widget>[
+          SizedBox(height: 16),
           SerchBar(),
-          AvatarWidget(),
           Expanded( child: FeedTabController())
         ]
       )

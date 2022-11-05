@@ -13,12 +13,7 @@ class _SerchBarState extends State<SerchBar> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 0, right: 0, left: 0),
-
-      /// In AnimSearchBar widget, the width, textController, onSuffixTap are required properties.
-      /// You have also control over the suffixIcon, prefixIcon, helpText and animationDurationInMilli
-      child: AnimSearchBar(
+    return AnimSearchBar(
         width: 400,
         textController: textController,
         onSuffixTap: () {
@@ -26,7 +21,6 @@ class _SerchBarState extends State<SerchBar> {
             textController.clear();
           });
         },
-      ),
-    );
+      );
   }
 }

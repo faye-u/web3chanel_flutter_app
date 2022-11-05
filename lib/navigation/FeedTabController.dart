@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:like_button/like_button.dart';
+
+import '../views/PostScrollView.dart';
 
 class FeedTabController extends StatefulWidget {
   const FeedTabController({super.key});
@@ -19,7 +22,7 @@ class _FeedTabControllerState extends State<FeedTabController> {
           appBar: AppBar(
             backgroundColor: Colors.black,
             shadowColor: Colors.pink,
-            toolbarHeight: 24,
+            toolbarHeight: 0,
             bottom: const TabBar(
               indicatorColor: Colors.pink,
               tabs: [
@@ -30,7 +33,7 @@ class _FeedTabControllerState extends State<FeedTabController> {
           ),
           body: const TabBarView(
             children: [
-              Text('Explore'),
+              PostScrollView(),
               Text('Connect'),
             ],
           ),
