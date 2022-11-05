@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web3chanel_flutter_app/widgets/AvatarWidget.dart';
 
 import '../widgets/SearchBar.dart';
 
@@ -18,7 +19,8 @@ class _FeedPageState extends State<FeedPage> {
       color: Colors.black,
       child: Column(
         children: const <Widget>[
-          SerchBar()
+          SerchBar(),
+          AvatarWidget()
         ]
       )
     );

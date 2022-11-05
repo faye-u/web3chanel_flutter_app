@@ -44,6 +44,7 @@ dependencies:
   path_provider: ^2.0.11
   uuid: ^3.0.6
   anim_search_bar: ^2.0.2
+  avatars: ^3.0.2
 
 dev_dependencies:
   flutter_test:
