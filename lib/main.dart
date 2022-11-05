@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web3chanel_flutter_app/pages/ChatPage.dart';
 
 
 void main() {
@@ -32,10 +33,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       'Feed',
       style: optionStyle,
     ),
-    Text(
-      'Chat',
-      style: optionStyle,
-    ),
+    ChatPage(),
     Text(
       'Proifle',
       style: optionStyle,
