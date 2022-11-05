@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../pages/ChatPage.dart';
-import '../pages/FeedPage.dart';
-import '../pages/ProfilePage.dart';
+import '../pages/chat_page.dart';
+import '../pages/feed_page.dart';
+import '../pages/profile_page.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});

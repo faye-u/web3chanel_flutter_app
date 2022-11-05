@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'navigation/BottomNavigation.dart';
+import 'navigation/bottom_navigation.dart';
+import 'navigation/main_route.dart';
+import 'pages/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,11 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.black,
         backgroundColor: Colors.black,
       ),
-      home: const BottomNavigation(),
+      initialRoute: MainRoutes.loginRoute,
+      routes: {
+        MainRoutes.loginRoute: (context) => const LoginPage(),
+        MainRoutes.homeRoute: (context) => const BottomNavigation(),
+      },
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'AvatarWidget.dart';
+import 'avatar_widget .dart';
 
 
 class User extends StatefulWidget {

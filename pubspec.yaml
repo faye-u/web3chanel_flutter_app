@@ -46,6 +46,9 @@ dependencies:
   anim_search_bar: ^2.0.2
   avatars: ^3.0.2
   like_button: ^2.0.5
+  google_fonts: ^3.0.1
+  walletconnect_dart: ^0.0.11
+  slider_button: ^2.0.0
 
 dev_dependencies:
   flutter_test:

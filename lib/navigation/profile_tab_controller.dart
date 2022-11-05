@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:like_button/like_button.dart';
 
-import '../views/PostScrollView.dart';
-
-class FeedTabController extends StatefulWidget {
-  const FeedTabController({super.key});
+class ProfileTabController extends StatefulWidget {
+  const ProfileTabController({super.key});
 
   @override
-  State<FeedTabController> createState() => _FeedTabControllerState();
+  State<ProfileTabController> createState() => _ProfileTabControllerState();
 }
 
-class _FeedTabControllerState extends State<FeedTabController> {
+class _ProfileTabControllerState extends State<ProfileTabController> {
   TextEditingController textController = TextEditingController();
 
   @override
@@ -26,15 +23,15 @@ class _FeedTabControllerState extends State<FeedTabController> {
             bottom: const TabBar(
               indicatorColor: Colors.pink,
               tabs: [
-                Tab(child: Text('Explore', style: TextStyle(fontSize: 18))),
-                Tab(child: Text('Connect', style: TextStyle(fontSize: 18))),
+                Tab(child: Icon(Icons.feed)),
+                Tab(child: Icon(Icons.tag)),
               ],
             ),
           ),
           body: const TabBarView(
             children: [
-              PostScrollView(),
-              Text('Connect'),
+              Icon(Icons.feed),
+              Icon(Icons.tag),
             ],
           ),
         ),

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:web3chanel_flutter_app/navigation/FeedTabController.dart';
-import 'package:web3chanel_flutter_app/navigation/ProfileTabController.dart';
+import 'package:web3chanel_flutter_app/navigation/profile_tab_controller.dart';
 
-import '../widgets/AvatarWidget.dart';
-import '../widgets/SearchBar.dart';
+import '../widgets/avatar_widget .dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
