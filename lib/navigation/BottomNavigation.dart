@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../pages/ChatPage.dart';
 import '../pages/FeedPage.dart';
+import '../pages/ProfilePage.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -17,10 +18,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   static const List<Widget> _widgetOptions = <Widget>[
     FeedPage(),
     ChatPage(),
-    Text(
-      'Proifle',
-      style: optionStyle,
-    )
+    ProfilePage(),
   ];
 
   void _onItemTapped(int index) {

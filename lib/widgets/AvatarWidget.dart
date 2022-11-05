@@ -10,7 +10,6 @@ class AvatarWidget extends StatefulWidget {
 }
 
 class _AvatarWidgetState extends State<AvatarWidget> {
-  TextEditingController textController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
