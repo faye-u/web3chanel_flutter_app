@@ -11,4 +11,4 @@ var connector = WalletConnect(
       icons: [
         'https://files.gitbook.com/v0/b/gitbook-legacy-files/o/spaces%2F-LJJeCjcLrr53DcT1Ml7%2Favatar.png?alt=media'
   ]));
-// var provider = WalletConnectProvider;
+var provider = EthereumWalletConnectProvider(connector);

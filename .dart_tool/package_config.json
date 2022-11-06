@@ -188,6 +188,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "flutter_web3",
+      "rootUri": "file:///Users/yanbangkan/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_web3-2.1.9",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_web_plugins",
       "rootUri": "file:///Users/yanbangkan/Documents/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
@@ -584,7 +590,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2022-11-06T08:45:08.716944Z",
+  "generated": "2022-11-06T09:23:14.142814Z",
   "generator": "pub",
   "generatorVersion": "2.18.4"
 }

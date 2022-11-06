@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:web3chanel_flutter_app/navigation/profile_tab_controller.dart';
+import 'package:web3chanel_flutter_app/globals.dart' as globals;
+// import '../abi/contracts/mocks/Currency.sol/Currency.json' as currency;
 
 
 class ProfilePage extends StatefulWidget {
@@ -12,6 +14,8 @@ class ProfilePage extends StatefulWidget {
   State<ProfilePage> createState() => _ProfilePageState();
 }
 
+const currency_address = '0xc4905364b78a742ccce7B890A89514061E47068D';
+// const contract = new ethers.Contract(tokenContractAddress, genericErc20Abi, provider);
 class _ProfilePageState extends State<ProfilePage> {
   TextEditingController textController = TextEditingController();
 
@@ -44,7 +48,7 @@ class _ProfilePageState extends State<ProfilePage> {
             const SizedBox(width: 24),
             // TODO: Add Address
             Text(
-              'Address\n0x90f47c184b5e9212786d162ffc2ee710526340c5',
+              'Address\n${globals.connector.session.accounts}',
               style: GoogleFonts.inconsolata(
                 fontWeight: FontWeight.bold, fontSize: 16, color: Colors.white),
             ),
@@ -55,7 +59,7 @@ class _ProfilePageState extends State<ProfilePage> {
             const SizedBox(width: 24),
             // TODO: Add Address
             Text(
-              '0 MATIC',
+              '0 token',
               style: GoogleFonts.inconsolata(
                 fontWeight: FontWeight.bold, fontSize: 16, color: Colors.white),
             ),
@@ -83,7 +87,9 @@ class _ProfilePageState extends State<ProfilePage> {
       final bytes = await result.readAsBytes();
       final image = await decodeImageFromList(bytes);
 
-      // TODO: upload image here 
+      // TODO: upload image here
+      //
+      print("image");
       
     }
   }
