@@ -51,6 +51,10 @@ dependencies:
   slider_button: ^2.0.0
   flutter_countdown_timer: ^4.1.0
   flutter_web3: ^2.1.9
+  flutter_ipfs: ^0.0.2
+
+dependency_overrides:
+  file_picker: 5.2.2
 
 dev_dependencies:
   flutter_test:
