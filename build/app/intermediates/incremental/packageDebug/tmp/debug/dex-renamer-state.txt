@@ -1,4 +1,4 @@
-#Sun Nov 06 01:29:01 PST 2022
+#Sun Nov 06 02:16:36 PST 2022
 base.0=/Users/yanbangkan/Projects/web3chanel_flutter_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

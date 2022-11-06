@@ -29,6 +29,7 @@ MERGED from [:image_picker_android] /Users/yanbangkan/Projects/web3chanel_flutte
 MERGED from [:flutter_plugin_android_lifecycle] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:sqflite] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:url_launcher_android] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-16:12
+MERGED from [:fluttertoast] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:path_provider_android] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:vibration] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/vibration/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/yanbangkan/.gradle/caches/transforms-3/246793f755122fe14a5802655438cb75/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
@@ -96,6 +97,8 @@ MERGED from [:sqflite] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/s
 MERGED from [:sqflite] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:url_launcher_android] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:url_launcher_android] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:vibration] /Users/yanbangkan/Projects/web3chanel_flutter_app/build/vibration/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
