@@ -24,7 +24,7 @@ test1(BuildContext context) async {
       try {
         // sign not await, await for launch app
         var provider = EthereumWalletConnectProvider(connector);
-        var hash = provider.sign(address: '0xE9477a3682a71230d1a17e580A3f16aC90222a25', message:"0xed6c11b0b5b808960df26f5bfc471d04c1995b0ffd2055925ad1be28d6baadfd");
+        var hash = provider.sign(address: globals.connector.session.accounts[0], message:"0xed6c11b0b5b808960df26f5bfc471d04c1995b0ffd2055925ad1be28d6baadfd");
         await launchUrlString(connector.session.toUri(), mode: LaunchMode.externalApplication);
         print(await hash);
         

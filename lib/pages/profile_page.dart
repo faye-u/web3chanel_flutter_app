@@ -47,9 +47,8 @@ class _ProfilePageState extends State<ProfilePage> {
           const SizedBox(height: 12),
           Row (children: [
             const SizedBox(width: 24),
-            // TODO: Add Address
             Text(
-              'Address\n${globals.connector.session.accounts}',
+              'Address\n${globals.connector.session.accounts[0]}',
               style: GoogleFonts.inconsolata(
                 fontWeight: FontWeight.bold, fontSize: 16, color: Colors.white),
             ),
