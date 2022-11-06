@@ -18,7 +18,6 @@ class _FeedPageState extends State<FeedPage> {
       child: Column(
         children: const <Widget>[
           SizedBox(height: 16),
-          // SerchBar(),
           Expanded( child: FeedTabController())
         ]
       )

@@ -2,11 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:like_button/like_button.dart';
-import 'package:web3chanel_flutter_app/navigation/feed_tab_controller.dart';
-import 'package:web3chanel_flutter_app/navigation/profile_tab_controller.dart';
 
-import '../widgets/avatar_widget .dart';
-import '../widgets/search_bar.dart';
 import '../widgets/user.dart';
 
 class PostScrollView extends StatefulWidget {

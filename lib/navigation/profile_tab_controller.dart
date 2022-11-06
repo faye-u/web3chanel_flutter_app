@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../pages/not_yet_implement_page.dart';
+import '../views/post_grid_view.dart';
 
 class ProfileTabController extends StatefulWidget {
   const ProfileTabController({super.key});
@@ -26,17 +27,18 @@ class _ProfileTabControllerState extends State<ProfileTabController> {
               indicatorColor: Colors.pink,
               tabs: [
                 Tab(child: Icon(Icons.feed)),
-                Tab(child: Icon(Icons.tag)),
+                Tab(child: Icon(Icons.favorite)),
               ],
             ),
           ),
           body: const TabBarView(
             children: [
-              NotImplementedPage(),
+              PostGridView(),
               NotImplementedPage(),
             ],
           ),
         ),
       );
   }
+
 }
