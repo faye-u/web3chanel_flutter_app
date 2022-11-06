@@ -30,15 +30,15 @@ class _ProfileTabControllerState extends State<ProfileTabController> {
           ),
           body: TabBarView(
             children: [
-              getImageGridView(['assets/images/post_1.jpeg', 'assets/images/post_2.jpeg']),
-              getImageGridView(['assets/images/like_1.jpeg', 'assets/images/post_1.jpeg']),
+              getImageGridView([Image.asset('assets/images/post_1.jpeg'), Image.asset('assets/images/post_2.jpeg'), Image.network("https://ipfs.io/ipfs/bafybeid2m2ex6un62ie7kvrb6q2ylekvgypgzhu3bvvmst3v4mjk2zutfy")]),
+              getImageGridView([Image.asset('assets/images/like_1.jpeg'), Image.asset('assets/images/post_1.jpeg')]),
             ],
           ),
         ),
       );
   }
 
-  Container getImageGridView(List<String> imagePathList) {
+  Container getImageGridView(List<Image> imagePathList) {
     return Container( 
       color: Colors.black,
       child: GridView.count(
@@ -46,7 +46,7 @@ class _ProfileTabControllerState extends State<ProfileTabController> {
             mainAxisSpacing: 10,
             crossAxisCount: 3,
             children: imagePathList.map((value) {
-                return Image.asset(value);
+                return value;
             }).toList()
           ),
     );
