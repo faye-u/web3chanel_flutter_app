@@ -1,9 +1,8 @@
 import 'package:avatars/avatars.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:web3chanel_flutter_app/navigation/profile_tab_controller.dart';
-
+import 'package:flutter_ipfs/flutter_ipfs.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -64,7 +63,7 @@ class _ProfilePageState extends State<ProfilePage> {
           const Expanded( child: ProfileTabController()),
           FloatingActionButton.small(
             backgroundColor: Colors.pink,
-            onPressed: () { _handleImageSelection(); },
+            onPressed: () { _handleImageSelection(context); },
             child: const Icon(Icons.add),
           ),
         ]
@@ -72,11 +71,9 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 
-  void _handleImageSelection() async {
-    final result = await ImagePicker().pickImage(
-      imageQuality: 70,
-      maxWidth: 1440,
-      source: ImageSource.gallery,
+  void _handleImageSelection(BuildContext context) async {
+    final result = await ImagePickerService.pickImage(
+      context
     );
 
     if (result != null) {
