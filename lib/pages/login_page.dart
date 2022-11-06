@@ -4,6 +4,7 @@ import 'package:walletconnect_dart/walletconnect_dart.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:slider_button/slider_button.dart';
+import 'package:web3chanel_flutter_app/globals.dart' as globals;
 
 import '../navigation/main_route.dart';
 
@@ -17,16 +18,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   // global variables
   var _session, _uri;
-
-  var connector = WalletConnect(
-    bridge: 'https://bridge.walletconnect.org',
-    clientMeta: const PeerMeta(
-      name: 'My App',
-      description: 'An dapp for socialFi NFT',
-      url: 'https://walletconnect.org',
-      icons: [
-        'https://files.gitbook.com/v0/b/gitbook-legacy-files/o/spaces%2F-LJJeCjcLrr53DcT1Ml7%2Favatar.png?alt=media'
-  ]));
+  var connector = globals.connector;
   
   // may change here to include more wallets with walletconnect support
   loginUsingMetamask(BuildContext context) async {
