@@ -29,15 +29,20 @@ class _BottomNavigationState extends State<BottomNavigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.stop),
-        onPressed: () => {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const RewardsPage()),
-          )
-        },
-      ),
+      floatingActionButton: SizedBox(
+        height: 36,
+        child: FittedBox(
+          child: FloatingActionButton.extended(
+            backgroundColor: Colors.orange,
+            onPressed: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const RewardsPage()),
+              )
+            },
+        icon: const Icon(Icons.money),
+        label: const Text('Reward'),
+      ))),
       floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),

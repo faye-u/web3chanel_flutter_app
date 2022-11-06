@@ -1,7 +1,5 @@
+import 'package:avatars/avatars.dart';
 import 'package:flutter/material.dart';
-
-import 'avatar_widget.dart';
-
 
 class User extends StatefulWidget {
   const User({super.key});
@@ -16,11 +14,16 @@ class _UserState extends State<User> {
   Widget build(BuildContext context) {
     return 
       Row(
-        children: const <Widget>[
-          SizedBox(width: 16),
-          AvatarWidget(),
-          SizedBox(width: 12),
-          Text("Undefyned",  style: TextStyle(fontSize: 12, color: Colors.white))
+        children: <Widget>[
+          const SizedBox(width: 16),
+          Avatar(
+            placeholderColors: [Colors.pink],
+            shape: AvatarShape.circle(16),
+            name:
+              'Undefyned', // Fallback if no image source is available
+          ),
+          const SizedBox(width: 12),
+          const Text("Undefyned",  style: TextStyle(fontSize: 12, color: Colors.white))
         ]
       );
   }

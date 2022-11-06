@@ -1,8 +1,9 @@
+import 'package:avatars/avatars.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:web3chanel_flutter_app/navigation/profile_tab_controller.dart';
 
-import '../widgets/avatar_widget.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -20,10 +21,48 @@ class _ProfilePageState extends State<ProfilePage> {
       color: Colors.black,
       child: Column(
         children:  <Widget>[
-          const SizedBox(height: 36),
-          const AvatarWidget(),
+          const SizedBox(height: 56),
+          Row (children: [
+            const SizedBox(width: 24),
+            Avatar(
+              placeholderColors: [Colors.pink],
+              shape: AvatarShape.circle(36),
+              name:
+                  'Undefyned', // Fallback if no image source is available
+              ),
+              const SizedBox(width: 48),
+              // TODO: Add Address and balance
+            Text(
+              'Undefyned',
+              style: GoogleFonts.inconsolata(
+                fontWeight: FontWeight.bold, fontSize: 24, color: Colors.white),
+            ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          Row (children: [
+            const SizedBox(width: 24),
+            // TODO: Add Address
+            Text(
+              'Address\n0x90f47c184b5e9212786d162ffc2ee710526340c5',
+              style: GoogleFonts.inconsolata(
+                fontWeight: FontWeight.bold, fontSize: 16, color: Colors.white),
+            ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          Row (children: [
+            const SizedBox(width: 24),
+            // TODO: Add Address
+            Text(
+              '0 MATIC',
+              style: GoogleFonts.inconsolata(
+                fontWeight: FontWeight.bold, fontSize: 16, color: Colors.white),
+            ),
+            ],
+          ),
           const Expanded( child: ProfileTabController()),
-          FloatingActionButton(
+          FloatingActionButton.small(
             backgroundColor: Colors.pink,
             onPressed: () { _handleImageSelection(); },
             child: const Icon(Icons.add),

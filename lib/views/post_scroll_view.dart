@@ -38,7 +38,9 @@ class _PostScrollViewState extends State<PostScrollView> {
             const SizedBox(height: 8),
             Image(image: AssetImage(imagePath), fit: BoxFit.fitWidth),
             const SizedBox(height: 16),
-            LikeButton(likeCount: Random().nextInt(10000))
+            Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+              LikeButton(likeCount: Random().nextInt(10000)),
+              const SizedBox(width: 12)])
           ]
         );
   }

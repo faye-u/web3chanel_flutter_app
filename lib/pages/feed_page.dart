@@ -17,7 +17,7 @@ class _FeedPageState extends State<FeedPage> {
       color: Colors.black,
       child: Column(
         children: const <Widget>[
-          SizedBox(height: 16),
+          SizedBox(height: 32),
           Expanded( child: FeedTabController())
         ]
       )
