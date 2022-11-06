@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../pages/not_yet_implement_page.dart';
+
 class ProfileTabController extends StatefulWidget {
   const ProfileTabController({super.key});
 
@@ -30,8 +32,8 @@ class _ProfileTabControllerState extends State<ProfileTabController> {
           ),
           body: const TabBarView(
             children: [
-              Icon(Icons.feed),
-              Icon(Icons.tag),
+              NotImplementedPage(),
+              NotImplementedPage(),
             ],
           ),
         ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:like_button/like_button.dart';
 
+import '../pages/not_yet_implement_page.dart';
 import '../views/post_scroll_view.dart';
 
 class FeedTabController extends StatefulWidget {
@@ -34,7 +35,7 @@ class _FeedTabControllerState extends State<FeedTabController> {
           body: const TabBarView(
             children: [
               PostScrollView(),
-              Text('Connect'),
+              NotImplementedPage(),
             ],
           ),
         ),

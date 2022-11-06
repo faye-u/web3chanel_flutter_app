@@ -38,6 +38,7 @@ class _LoginPageState extends State<LoginPage> {
         });
         setState(() {
           _session = session;
+          print(_session);
         });
       } catch (exp) {
         print('Login with MetaMask failed due to: $exp');
@@ -115,7 +116,6 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 16),
               ]
             ),
-
           // slide to login
             (_session != null) ?
             Container(
