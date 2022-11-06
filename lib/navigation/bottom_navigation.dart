@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web3chanel_flutter_app/pages/rewards_page.dart';
 
 import '../pages/chat_page.dart';
 import '../pages/feed_page.dart';
@@ -27,14 +28,23 @@ class _BottomNavigationState extends State<BottomNavigation> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.stop),
+        onPressed: () => {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const RewardsPage()),
+          )
+        },
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: false,   
-        showUnselectedLabels: false, 
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
